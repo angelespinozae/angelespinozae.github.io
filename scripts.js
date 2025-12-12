@@ -1,11 +1,11 @@
 // Global variables
-let allPublications = [];
+let allWork = [];
 let showingSelected = true;
 
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function() {
-  // Load publications data
-  loadPublications();
+  // Load work data
+  loadWork();
   
   // Initialize animation delays for sections
   const sections = document.querySelectorAll('section');
@@ -14,14 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
   
   // Add event listener for toggle button
-  const toggleButton = document.getElementById('toggle-publications');
+  const toggleButton = document.getElementById('toggle-work');
   if (toggleButton) {
-    toggleButton.addEventListener('click', togglePublications);
+    toggleButton.addEventListener('click', toggleWork);
   }
 });
 
-// Load publications from JSON file
-function loadPublications() {
+// Load work from JSON file
+function loadWork() {
   fetch('publications.json')
     .then(response => {
       if (!response.ok) {
@@ -30,52 +30,52 @@ function loadPublications() {
       return response.json();
     })
     .then(data => {
-      console.log("Publications loaded successfully:", data);
-      allPublications = data.publications;
-      renderPublications(true);
+      console.log("Work loaded successfully:", data);
+      allWork = data.publications;
+      renderWork(true);
     })
     .catch(error => {
-      console.error('Error loading publications:', error);
-      // Create fallback publications display if JSON loading fails
-      displayFallbackPublications();
+      console.error('Error loading work:', error);
+      // Create fallback work display if JSON loading fails
+      displayFallbackWork();
     });
 }
 
 // Fallback if JSON loading fails
-function displayFallbackPublications() {
-  const container = document.getElementById('publications-container');
-  container.innerHTML = `Error loading publications.`;
+function displayFallbackWork() {
+  const container = document.getElementById('work-container');
+  container.innerHTML = `Error loading work.`;
 }
 
-// Toggle between showing all or selected publications
-function togglePublications() {
+// Toggle between showing all or selected work
+function toggleWork() {
   showingSelected = !showingSelected;
-  renderPublications(showingSelected);
+  renderWork(showingSelected);
   
   // Update button text
-  const toggleButton = document.getElementById('toggle-publications');
+  const toggleButton = document.getElementById('toggle-work');
   toggleButton.textContent = showingSelected ? 'Show All' : 'Show Selected';
   const toggleHeader = document.getElementById('toggle-header');
-  toggleHeader.textContent = showingSelected ? 'Selected Publications' : 'All Publications';
+  toggleHeader.textContent = showingSelected ? 'Selected Work' : 'All Work';
 }
 
-// Render publications based on selection state
-function renderPublications(selectedOnly) {
-  const publicationsContainer = document.getElementById('publications-container');
-  publicationsContainer.innerHTML = '';
+// Render work based on selection state
+function renderWork(selectedOnly) {
+  const workContainer = document.getElementById('work-container');
+  workContainer.innerHTML = '';
   
-  const pubsToShow = selectedOnly ? 
-    allPublications.filter(pub => pub.selected === 1) : 
-    allPublications;
+  const worksToShow = selectedOnly ? 
+    allWork.filter(work => work.selected === 1) : 
+    allWork;
   
-  pubsToShow.forEach(publication => {
-    const pubElement = createPublicationElement(publication);
-    publicationsContainer.appendChild(pubElement);
+  worksToShow.forEach(work => {
+    const workElement = createWorkElement(work);
+    workContainer.appendChild(workElement);
   });
 }
 
-// Create HTML element for a publication
-function createPublicationElement(publication) {
+// Create HTML element for a work item
+function createWorkElement(publication) {
   const pubItem = document.createElement('div');
   pubItem.className = 'publication-item';
   
@@ -151,6 +151,26 @@ function createPublicationElement(publication) {
       links.appendChild(pdfLink);
     }
     
+    // Add abstract toggle button right after PDF if abstract exists
+    if (publication.abstract && publication.abstract.length > 0) {
+      const abstractToggle = document.createElement('a');
+      abstractToggle.href = '#';
+      abstractToggle.className = 'abstract-toggle';
+      abstractToggle.textContent = '[Abstract]';
+      abstractToggle.onclick = (e) => {
+        e.preventDefault();
+        const abstractContent = content.querySelector('.abstract-content');
+        if (abstractContent.style.display === 'block') {
+          abstractContent.style.display = 'none';
+          abstractToggle.textContent = '[Abstract]';
+        } else {
+          abstractContent.style.display = 'block';
+          abstractToggle.textContent = '[Hide Abstract]';
+        }
+      };
+      links.appendChild(abstractToggle);
+    }
+    
     if (publication.links.code) {
       const codeLink = document.createElement('a');
       codeLink.href = publication.links.code;
@@ -166,6 +186,15 @@ function createPublicationElement(publication) {
     }
     
     content.appendChild(links);
+  }
+  
+  // Add abstract content div if abstract exists
+  if (publication.abstract && publication.abstract.length > 0) {
+    const abstractContent = document.createElement('div');
+    abstractContent.className = 'abstract-content';
+    abstractContent.style.display = 'none';
+    abstractContent.textContent = publication.abstract;
+    content.appendChild(abstractContent);
   }
   
   // Assemble the publication item

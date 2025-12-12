@@ -132,14 +132,14 @@ section {
 }
 
 /* Publication styles */
-.publications-header {
+.work-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.toggle-publications {
+.toggle-work {
   background-color: rgba(74, 116, 185, 0.08);
   color: var(--accent-color);
   border: none;
@@ -150,7 +150,7 @@ section {
   transition: all var(--transition-time) ease;
 }
 
-.toggle-publications:hover {
+.toggle-work:hover {
   background-color: var(--accent-color);
   color: white;
 }
@@ -267,6 +267,34 @@ section {
   background-color: var(--accent-color);
   transform: translateX(3px);
   box-shadow: 0 2px 5px rgba(74, 116, 185, 0.2);
+}
+
+/* Abstract styles */
+.pub-links .abstract-toggle {
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: all var(--transition-time) ease;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background-color: rgba(74, 116, 185, 0.08);
+}
+
+.pub-links .abstract-toggle:hover {
+  color: #fff;
+  background-color: var(--accent-color);
+  transform: translateX(3px);
+  box-shadow: 0 2px 5px rgba(74, 116, 185, 0.2);
+}
+
+.abstract-content {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  background-color: rgba(74, 116, 185, 0.05);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 /* Awards section */
