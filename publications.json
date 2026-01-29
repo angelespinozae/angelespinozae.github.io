@@ -1,14 +1,102 @@
 {
   "publications": [
     {
+      "title": "Automation at Home, Triggered Abroad: Firm Responses to Foreign Technological Change",
+      "authors": [
+        "Angel Espinoza E."
+      ],
+      "venue": "Work in Progress",
+      "thumbnail": "images/thumbs/img_robots.png",
+      "selected": 0,
+      "award": "",
+      "abstract": "This paper investigates how firms in developing countries respond to automation and technological changes in their foreign trade partners. Using detailed firm-level data from Mexico and variation in robot adoption across US industries, I examine whether exposure to foreign automation triggers domestic technology adoption, affects employment decisions, and influences firm performance in global value chains.",
+      "links": null
+    },
+    {
+      "title": "Beyond Final Goods: The Firm-Level Impact of Capital Goods Liberalization",
+      "authors": [
+        "Angel Espinoza E."
+      ],
+      "venue": "Work in Progress",
+      "thumbnail": "images/thumbs/img_capitalgoods.png",
+      "selected": 0,
+      "award": "",
+      "abstract": "This paper studies how tariff reductions on capital goods affect firm-level investment, technology adoption, and performance. While the trade literature has focused on welfare gains from final goods liberalization, empirical evidence on the effects of machinery tariff reductions remains limited. I exploit NAFTA's staggered liberalization of capital goods in Mexico—where tariffs dropped from 10–20% to zero under product-specific phase-out schedules—as a quasi-experiment. Using an event study design, I track firms over time as specific capital goods become liberalized, estimating dynamic responses in capital investment and production technologies. To strengthen identification, I exploit variation in output-good tariff reductions and construct firm-level measures of exposure to foreign competition, examining heterogeneous effects on technology adoption across firms.",
+      "links": null
+    },
+    {
+      "title": "Firms' Strategic Responses to Rules of Origin: Evidence from the USMCA",
+      "authors": [
+        "Angel Espinoza E.",
+        "Miguel Ángel Talamás Marcos",
+        "María José Orraca"
+      ],
+      "venue": "Working Paper",
+      "thumbnail": "images/thumbs/img_roo.png",
+      "selected": 1,
+      "award": "",
+      "abstract": "Free Trade Agreements (FTAs) are prevalent and increasingly complex. This paper analyzes firms' strategic responses to the stricter Rules of Origin (RoO) for the automotive industry introduced during the renegotiation of the US-Mexico-Canada Trade Agreement (USMCA). Using Mexican customs administrative data, we demonstrate that tighter RoO increased the share of Mexican exports to the U.S. subject to tariffs and prompted car manufacturers in Mexico to source more inputs from North America. Consistent with existing theoretical predictions, we find that firms respond strategically based on how close they were ex-ante to comply with new RoO: firms that already complied or were far from complying respond the least, and therefore, the effect on inputs sourced from the region exhibits an inverse U-shape. Finally, we show that these higher costs are passed on to consumers: among cars sold in the United States, those that were not ex-ante compliant with USMCA saw prices rise by an additional 2% compared to vehicles that were.",
+      "links": {
+        "pdf": "https://u.pcloud.link/publink/show?code=XZqwnK5Z2K4xgLPTdvYQeKtjwiOmV8SXNs7k"
+      }
+    },
+    {
+      "title": "Tariff Day: Impact of Recent U.S. Tariff Increases on Latin America and the Caribbean",
+      "authors": [
+        "Vanessa Alviarez",
+        "Angel Espinoza E."
+      ],
+      "venue": "Working Paper",
+      "thumbnail": "images/thumbs/img_tariffs.png",
+      "selected": 1,
+      "award": "",
+      "abstract": "This paper evaluates the global economic impact of the 2025 U.S. tariff increases under the Trump administration, focusing on Latin America and the Caribbean. Using a quantitative general equilibrium trade model based on Eaton and Kortum (2002) and Caliendo and Parro (2015), we simulate six policy scenarios. The first three capture escalating trade tensions—from unilateral U.S. tariff hikes to retaliatory measures by China and Canada. The final three reflect partial de-escalation paths, including reciprocal tariff reductions, expanded exemptions, and tariff harmonization across North America. We find that LAC was the least affected region. Mexico, exempted from the April 2 measures but subject to Section 232 tariffs, benefits from trade diversion.",
+      "links": {
+        "pdf": "https://u.pcloud.link/publink/show?code=XZawnK5ZA6gWkT6gx6fc16EcyIWhm4VYchX7"
+      }
+    },
+    {
+      "title": "The Effects of Suppressing Company Unions: Evidence from Mexico",
+      "authors": [
+        "Angel Espinoza E.",
+        "León Fernández Bujanda",
+        "Ratzanyel Rincón"
+      ],
+      "venue": "Working Paper",
+      "thumbnail": "images/thumbs/img_unions.png",
+      "selected": 1,
+      "award": "",
+      "abstract": "This paper studies how firms with company unions respond to the threat of worker-aligned unionization, leveraging a major labor reform in Mexico driven by USMCA pressures to democratize the union system. The reform required all existing collective bargaining agreements (CBAs) to be legitimized through worker votes within four years. We combine matched employer-employee data with web-scraped union data and use a matching DID design, comparing outcomes in firms whose CBAs were not legitimized to those successfully legitimized. Our results show a 6% increase in wages five years post-reform, concentrated in the lower part of the within-firm wage distribution, accompanied by a 10% reduction in employment. Average worker quality and firm-specific pay premiums also increased, indicating productivity gains and an improvement in workers' bargaining power within treated firms.",
+      "links": {
+        "pdf": "https://u.pcloud.link/publink/show?code=XZ7KnK5ZPD8H4NGJH5QbQfbtnvBmEpm7niiy"
+      }
+    },
+    {
+      "title": "How Shocks Travel: The Cross-Border Impact of Natural Disasters in Firm Networks",
+      "authors": [
+        "Vanessa Alviarez",
+        "Brian C. Fujiy",
+        "Angel Espinoza E.",
+        "Tomasz Swiecki"
+      ],
+      "venue": "Revise & Resubmit, IMF Economic Review",
+      "thumbnail": "images/thumbs/img_shocks.png",
+      "selected": 1,
+      "award": "",
+      "abstract": "We study how disruptions in global production networks propagate across borders through firm-to-firm linkages. Using a novel dataset that combines U.S. Bill of Lading microdata, geocoded records of global natural disasters, Orbis ownership linkages, and firm-level financial data from Compustat, we study exogenous shocks to foreign input suppliers and trace their effects on U.S.-based firms. We implement an event-study strategy with staggered adoption of treatment and exploit the exogeneity of natural disasters to estimate their impact on firm outcomes. Our findings suggest that U.S. firms experience declines in imports following a shock to their foreign suppliers, with larger effects observed when the relationship involves common ownership. Furthermore, we find evidence that foreign affiliates located in unaffected districts also respond to shocks affecting related parties elsewhere, pointing to an internal reallocation of production within multinational networks.",
+      "links": {
+        "pdf": "https://u.pcloud.link/publink/show?code=XZawnK5ZA6gWkT6gx6fc16EcyIWhm4VYchX7"
+      }
+    },
+    {
       "title": "Public Transportation Infrastructure and Consumer Prices: Chain Stores, Street Vendors and Mom and Pop Stores",
       "authors": [
         "Angel Espinoza E."
       ],
       "venue": "Banco de México, Working Papers Series (2024)",
       "thumbnail": "images/thumbs/img_brt.png",
-      "selected": 1,
-      "award": "",
+      "selected": 0,
+      "award": "1st Place, Ex ITAM Research Award 2022",
       "abstract": "This paper examines how the expansion of Mexico City's Bus Rapid Transit (BRT) system affects consumer prices across different types of retail establishments. Using high-frequency price data and a difference-in-differences approach, I find that improved public transportation infrastructure leads to heterogeneous price responses: chain stores reduce prices due to increased competition and consumer access, while street vendors and mom-and-pop stores exhibit different pricing strategies. The results highlight the importance of transportation infrastructure in shaping local market competition and consumer welfare.",
       "links": {
         "pdf": "https://www.banxico.org.mx/publications-and-press/banco-de-mexico-working-papers/%7B1EB76275-6AC3-24F8-FEDD-052D170D74BE%7D.pdf"
@@ -22,101 +110,12 @@
       ],
       "venue": "Working Paper",
       "thumbnail": "images/thumbs/img_airquality.png",
-      "selected": 1,
+      "selected": 0,
       "award": "",
       "abstract": "We study the environmental impact of Mexico City's Bus Rapid Transit (BRT) system on local air quality. Using detailed pollution monitoring data and the staggered rollout of BRT lines, we employ a difference-in-differences strategy to estimate the causal effect of improved public transportation on air pollution. Our findings suggest significant reductions in key pollutants near BRT stations, with important implications for urban transportation policy in developing countries.",
       "links": {
-        "pdf": "https://u.pcloud.link/publink/show?code=XZlcDIXZYg03ttE9LxzBTgXH7qyoRJw8QdBy"
+        "pdf": "https://papers.ssrn.com/sol3/Delivery.cfm/3f264476-e9ba-432b-b9aa-e2e91e402aa7-MECA.pdf?abstractid=4078635&mirid=1&type=2"
       }
-    },
-    {
-      "title": "Poverty Evolution in Mexico: Analysis of the Statistical Algorithm for the Continuity of MCS-ENIGH",
-      "authors": [
-        "Angel Espinoza E."
-      ],
-      "venue": "Conditionally Accepted at Estudios Económicos, El Colegio de México",
-      "thumbnail": "images/thumbs/img_poverty.png",
-      "selected": 1,
-      "award": "",
-      "abstract": "This paper analyzes the statistical algorithm used to ensure continuity in Mexico's household income and expenditure surveys (MCS-ENIGH). I evaluate the methodology's implications for poverty measurement and trend analysis, identifying potential biases and proposing improvements. The findings are crucial for accurate poverty monitoring and evidence-based policymaking in Mexico.",
-      "links": {
-        "pdf": "https://u.pcloud.link/publink/show?code=XZJoDIXZtxlirDNimmJtpgoGdTFXeHvu2wjy"
-      }
-    },
-    {
-      "title": "Automation at Home, Triggered Abroad: Firm Responses to Foreign Technological Change",
-      "authors": [
-        "Angel Espinoza E."
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_robots.png",
-      "selected": 0,
-      "award": "",
-      "abstract": "This paper investigates how firms in developing countries respond to automation and technological changes in their foreign trade partners. Using detailed firm-level data from Mexico and variation in robot adoption across US industries, I examine whether exposure to foreign automation triggers domestic technology adoption, affects employment decisions, and influences firm performance in global value chains.",
-      "links": {}
-    },
-    {
-      "title": "Beyond Final Goods: The Firm-Level Impact of Capital Goods Liberalization",
-      "authors": [
-        "Angel Espinoza E."
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_capitalgoods.png",
-      "selected": 0,
-      "award": "",
-      "links": {}
-    },
-    {
-      "title": "Firms' Strategic Responses to Rules of Origin: Evidence from the USMCA",
-      "authors": [
-        "Angel Espinoza E.",
-        "Miguel Ángel Talamás Marcos",
-        "María José Orraca"
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_roo.png",
-      "selected": 0,
-      "award": "",
-      "links": {}
-    },
-    {
-      "title": "The Effects of Suppressing Company Unions: Evidence from Mexico",
-      "authors": [
-        "Angel Espinoza E.",
-        "León Fernández Bujanda",
-        "Ratzanyel Rincón"
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_unions.png",
-      "selected": 0,
-      "award": "",
-      "links": {}
-    },
-    {
-      "title": "How Shocks Travel: The Cross-Border Impact of Natural Disasters in Firm Networks",
-      "authors": [
-        "Vanessa Alviarez",
-        "B. Fujiy",
-        "Angel Espinoza E.",
-        "T. Swiecki"
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_shocks.png",
-      "selected": 0,
-      "award": "",
-      "links": {}
-    },
-    {
-      "title": "Tariff Day: Impact of Recent U.S. Tariff Increases on Latin America and the Caribbean",
-      "authors": [
-        "Vanessa Alviarez",
-        "Angel Espinoza E."
-      ],
-      "venue": "Work in Progress",
-      "thumbnail": "images/thumbs/img_tariffs.png",
-      "selected": 0,
-      "award": "",
-      "links": {}
     },
     {
       "title": "Industry-Specific Measures of Exposure to International Trade",
@@ -125,10 +124,11 @@
         "María José Orraca",
         "Carlos Ramírez Dávila"
       ],
-      "venue": "Work in Progress",
+      "venue": "Working Paper",
       "thumbnail": "images/thumbs/img_intlexposure.png",
       "selected": 0,
       "award": "",
+      "abstract": "We propose a framework to construct industry-specific measures of exposure to international trade through different channels for the manufacturing sector using Input-Output tables, industrial surveys and trade balance data. The measures we propose may capture the share of total imports and imports by origin in apparent consumption, the direct and indirect share of imports in production costs, the share of total exports and GVC-related exports in total sales, and the share of international trade in production. We estimate them at the most narrow industry classification in Mexico and document an increasing importance of international trade in domestic production and consumption.",
       "links": {}
     },
     {
@@ -139,11 +139,26 @@
         "Vicente López",
         "María José Orraca"
       ],
-      "venue": "Work in Progress",
+      "venue": "Working Paper",
       "thumbnail": "images/thumbs/img_costindices.png",
       "selected": 0,
       "award": "",
+      "abstract": "Measuring cost pressures is important to inform policy decisions. We propose a method to construct industry-specific cost indices using I-O tables and estimate these for the most disaggregated level of the industrial classification in Mexico. By linking cost indices at the industry level with each item in the CPI basket in Mexico, we show that these are a powerful tool to illustrate how cost pressures have evolved over time, to analyze the sources of cost pressures on consumer prices in Mexico at different points in time, and particularly for understanding the inflationary surge in the aftermath of the COVID-19 pandemic. Finally, we show that cost indices have predictive power over inflation, despite pass-through being incomplete and lagged.",
       "links": {}
+    },
+    {
+      "title": "Poverty Evolution in Mexico: Analysis of the Statistical Algorithm for the Continuity of MCS-ENIGH",
+      "authors": [
+        "Angel Espinoza E."
+      ],
+      "venue": "Conditionally Accepted at Estudios Económicos, El Colegio de México",
+      "thumbnail": "images/thumbs/img_poverty.png",
+      "selected": 0,
+      "award": "2nd Place, Premio Citibanamex de Economía 2019 (Undergraduate)",
+      "abstract": "This paper analyzes the statistical algorithm used to ensure continuity in Mexico's household income and expenditure surveys (MCS-ENIGH). I evaluate the methodology's implications for poverty measurement and trend analysis, identifying potential biases and proposing improvements. The findings are crucial for accurate poverty monitoring and evidence-based policymaking in Mexico.",
+      "links": {
+        "pdf": "https://u.pcloud.link/publink/show?code=XZJoDIXZtxlirDNimmJtpgoGdTFXeHvu2wjy"
+      }
     }
   ]
 }

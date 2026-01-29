@@ -22,7 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Load work from JSON file
 function loadWork() {
-  fetch('publications.json')
+  // Add version parameter to prevent caching
+  const version = new Date().getTime();
+  fetch(`publications.json?v=${version}`)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Network response was not ok: ${response.status}`);
@@ -139,52 +141,56 @@ function createWorkElement(publication) {
   
   content.appendChild(venueContainer);
   
-  // Add links if they exist
-  if (publication.links) {
-    const links = document.createElement('div');
-    links.className = 'pub-links';
-    
-    if (publication.links.pdf) {
-      const pdfLink = document.createElement('a');
-      pdfLink.href = publication.links.pdf;
-      pdfLink.textContent = '[PDF]';
-      links.appendChild(pdfLink);
-    }
-    
-    // Add abstract toggle button right after PDF if abstract exists
-    if (publication.abstract && publication.abstract.length > 0) {
-      const abstractToggle = document.createElement('a');
-      abstractToggle.href = '#';
-      abstractToggle.className = 'abstract-toggle';
-      abstractToggle.textContent = '[Abstract]';
-      abstractToggle.onclick = (e) => {
-        e.preventDefault();
-        const abstractContent = content.querySelector('.abstract-content');
-        if (abstractContent.style.display === 'block') {
-          abstractContent.style.display = 'none';
-          abstractToggle.textContent = '[Abstract]';
-        } else {
-          abstractContent.style.display = 'block';
-          abstractToggle.textContent = '[Hide Abstract]';
-        }
-      };
-      links.appendChild(abstractToggle);
-    }
-    
-    if (publication.links.code) {
-      const codeLink = document.createElement('a');
-      codeLink.href = publication.links.code;
-      codeLink.textContent = '[Code]';
-      links.appendChild(codeLink);
-    }
-    
-    if (publication.links.project) {
-      const projectLink = document.createElement('a');
-      projectLink.href = publication.links.project;
-      projectLink.textContent = '[Project Page]';
-      links.appendChild(projectLink);
-    }
-    
+  // Add links container (always create it for abstract button)
+  const links = document.createElement('div');
+  links.className = 'pub-links';
+  
+  // Add PDF link if it exists
+  if (publication.links && publication.links.pdf) {
+    const pdfLink = document.createElement('a');
+    pdfLink.href = publication.links.pdf;
+    pdfLink.textContent = '[PDF]';
+    links.appendChild(pdfLink);
+  }
+  
+  // Add abstract toggle button if abstract exists
+  if (publication.abstract && publication.abstract.length > 0) {
+    const abstractToggle = document.createElement('a');
+    abstractToggle.href = '#';
+    abstractToggle.className = 'abstract-toggle';
+    abstractToggle.textContent = '[Abstract]';
+    abstractToggle.onclick = (e) => {
+      e.preventDefault();
+      const abstractContent = content.querySelector('.abstract-content');
+      if (abstractContent.style.display === 'block') {
+        abstractContent.style.display = 'none';
+        abstractToggle.textContent = '[Abstract]';
+      } else {
+        abstractContent.style.display = 'block';
+        abstractToggle.textContent = '[Hide Abstract]';
+      }
+    };
+    links.appendChild(abstractToggle);
+  }
+  
+  // Add code link if it exists
+  if (publication.links && publication.links.code) {
+    const codeLink = document.createElement('a');
+    codeLink.href = publication.links.code;
+    codeLink.textContent = '[Code]';
+    links.appendChild(codeLink);
+  }
+  
+  // Add project link if it exists
+  if (publication.links && publication.links.project) {
+    const projectLink = document.createElement('a');
+    projectLink.href = publication.links.project;
+    projectLink.textContent = '[Project Page]';
+    links.appendChild(projectLink);
+  }
+  
+  // Only append links container if it has children
+  if (links.children.length > 0) {
     content.appendChild(links);
   }
   
